@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hotel Enquiry Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Heading Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Para Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8006451f2f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header-fixed">
+
+        <div class="header-limiter">
+
+            <a href="#" class="nav-left"><img src="img/logo-bg.jpg"></a>
+
+            <nav class="nav-right">
+                <a href="#" class="selected">Home</a>
+                <a href="#">Hotel Enquiry</a>
+                <a href="#">Package Enquiry</a>
+                <a href="#">Car Enquiry</a>
+                <a href="#">Contact Us</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- Rooms section -->
+    <div class="Rooms-area">
+        <div class="container">
+            <h2>Hotel Rooms</h2>
+            <div class="lower-content-area">
+                <div class="result_box bg-white mb-5">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <!-- Room Image Start-->
+                            <div id="room_carousel_0" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner1">
+                                    <div class="carousel-item active">
+                                        <img src="https://app.ruraldreams.in/uploads/roomImages/883371626322814.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://app.ruraldreams.in/uploads/roomImages/711701626322827.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://app.ruraldreams.in/uploads/roomImages/828761662983124.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#room_carousel_0" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#room_carousel_0" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+
+                            <!-- Room Image End -->
+                        </div>
+                        <div class="col-lg-6 col-md-5 col-sm-12 col-xs-12">
+                            <div class="tour_list_desc d-flex flex-column">
+                                <div class="d-flex mb-4">
+                                    <h5 class="room_type">
+                                        <span id="flag" class="me-2">
+                                            <img src="img/check.png">
+                                        </span> AC Facility
+                                    </h5>
+                                </div>
+                                <h3><strong>Standard Room Double Occupancy (AC)</strong></h3>
+                                <p>
+                                    <span class="text-primary">Bed Type: <strong>King Size Bed (6x7)</strong></span> |
+                                    <span style="font-size: 13px;">Property: Rimil Eco Tourism</span>
+                                </p>
+
+                                <div id="single_tour_desc" class="w-100">
+                                    <div id="single_tour_feat">
+                                        <div class="features">
+                                            <img src="img/ai.png" class="room_aminity" loading="lazy">
+                                            <br> Air Conditioner
+                                        </div>
+                                        <div class="features">
+                                            <img src="img/hot.png" class="room_aminity" loading="lazy">
+                                            <br> Hold &amp; Cold Water
+                                        </div>
+                                        <div class="features">
+                                            <img src="img/power.png" class="room_aminity" loading="lazy">
+                                            <br> Power Backup
+                                        </div>
+                                        <div class="features">
+                                            <img src="img/TV.png" class="room_aminity" loading="lazy">
+                                            <br> TV
+                                        </div>
+                                        <div class="features">
+                                            <img src="img/wifi.png" class="room_aminity" loading="lazy">
+                                            <br> Free WiFi
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                            <div class="price_list">
+                                <i class="icon-rupee"><img src="img/rupee-indian.png"></i>1900
+                                <small class="mt-2">(Taxes applicable)</small>
+                                <p><small class="fw-bold text-primary">EP Plan: Room Only</small></p>
+                                <div class="form-group align-items-center justify-content-between mt-2 mb-2">
+                                    <span class="fs-6 fw-bold me-2 select-room">Select Rooms</span>
+                                    <select class="form-control roombookqty" id="roombookqty1" name="roombookqty[]">
+                                          <option value="">Select</option>
+                                           <option value="1" room_id="1" avg_offered_tariff="2000" quantity="1">1</option>
+                                               <option value="2" room_id="1" avg_offered_tariff="2000" quantity="2">2</option>
+                                               <option value="3" room_id="1" avg_offered_tariff="2000" quantity="3">3</option>
+                                               <option value="4" room_id="1" avg_offered_tariff="2000" quantity="4">4</option>
+                                       </select>
+                                </div>
+
+                                <p><small class="text">May be available 2</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="result_box bg-white">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <!-- Room Image Start-->
+                            <div id="room_carousel_1" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner1">
+                                    <div class="carousel-item">
+                                        <img src="https://app.ruraldreams.in/uploads/roomImages/883371626322814.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://app.ruraldreams.in/uploads/roomImages/711701626322827.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="https://app.ruraldreams.in/uploads/roomImages/828761662983124.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#room_carousel_1" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                              </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#room_carousel_1" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                            <!-- Room Image End -->
+                        </div>
+                        <div class="col-lg-6 col-md-5 col-sm-12 col-xs-12">
+                            <div class="tour_list_desc d-flex flex-column">
+                                <div class="d-flex mb-4">
+                                    <h5 class="room_type non-ac">
+                                        <span id="flag" class="me-2">
+                                          <img src="img/check.png">
+                                      </span> Non AC Facility
+                                    </h5>
+                                </div>
+                                <h3><strong>Standard Room Double Occupancy (Non AC)</strong></h3>
+                                <p>
+                                    <span class="text-primary">Bed Type: <strong>King Size Bed (6x7)</strong></span> |
+                                    <span style="font-size: 13px;">Property: Rimil Eco Tourism</span>
+                                </p>
+
+                                <div id="single_tour_desc" class="w-100">
+                                    <div id="single_tour_feat">
+                                        <div class="features">
+                                            <img src="img/ai.png" class="room_aminity" loading="lazy">
+                                            <br> Air Conditioner
+                                        </div>
+                                        <div class="features">
+                                            <img src="img/hot.png" class="room_aminity" loading="lazy">
+                                            <br> Hold &amp; Cold Water
+                                        </div>
+                                        <div class="features">
+                                            <img src="img/power.png" class="room_aminity" loading="lazy">
+                                            <br> Power Backup
+                                        </div>
+                                        <div class="features">
+                                            <img src="img/TV.png" class="room_aminity" loading="lazy">
+                                            <br> TV
+                                        </div>
+                                        <div class="features">
+                                            <img src="img/wifi.png" class="room_aminity" loading="lazy">
+                                            <br> Free WiFi
+                                        </div>
+                                        <div class="features">
+                                            <img src="img/ai.png" class="room_aminity" loading="lazy">
+                                            <br> Air Conditioner
+                                        </div>
+                                        <div class="features">
+                                            <img src="img/hot.png" class="room_aminity" loading="lazy">
+                                            <br> Hold &amp; Cold Water
+                                        </div>
+                                        <div class="features">
+                                            <img src="img/power.png" class="room_aminity" loading="lazy">
+                                            <br> Power Backup
+                                        </div>
+                                        <div class="features">
+                                            <img src="img/TV.png" class="room_aminity" loading="lazy">
+                                            <br> TV
+                                        </div>
+                                        <div class="features">
+                                            <img src="img/wifi.png" class="room_aminity" loading="lazy">
+                                            <br> Free WiFi
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                            <div class="price_list">
+                                <i class="icon-rupee"><img src="img/rupee-indian.png"></i>1900
+                                <small class="mt-2">(Taxes applicable)</small>
+                                <p><small class="fw-bold text-primary">EP Plan: Room Only</small></p>
+                                <div class="form-group align-items-center justify-content-between mt-2 mb-2">
+                                    <span class="fs-6 fw-bold me-2 select-room">Select Rooms</span>
+                                    <select class="form-control roombookqty" id="roombookqty1" name="roombookqty[]">
+                                        <option value="">Select</option>
+                                         <option value="1" room_id="1" avg_offered_tariff="2000" quantity="1">1</option>
+                                             <option value="2" room_id="1" avg_offered_tariff="2000" quantity="2">2</option>
+                                             <option value="3" room_id="1" avg_offered_tariff="2000" quantity="3">3</option>
+                                             <option value="4" room_id="1" avg_offered_tariff="2000" quantity="4">4</option>
+                                            </select>
+                                </div>
+                                <p><small class="text">May be available 2</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="single-room-area">
+            <div class="container">
+                <div class="single-room-inner">
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th class="capText single-border">ROOM TYPE</th>
+                                <th class="capText single-border">OPTIONS</th>
+                                <th class="capText">PRICE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="single-room-left">
+                                <td>
+                                    <div id="room_carousel_2" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner1">
+                                            <div class="carousel-item active">
+                                                <img src="https://app.ruraldreams.in/uploads/roomImages/883371626322814.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="https://app.ruraldreams.in/uploads/roomImages/711701626322827.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="https://app.ruraldreams.in/uploads/roomImages/828761662983124.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#room_carousel_2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#room_carousel_2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                    </div>
+                                    <h2 class="rmType__roomName" data-testid="rmType__roomName">Garden View Cottage</h2>
+                                    <ul class="rmTypeList vertical">
+                                        <li class="rmTypeList__item">
+                                            <span class="rmTypeList__item--icon">
+                                   <img src="https://promos.makemytrip.com/Hotels_product/Hotel_SR/Android/drawable-hdpi/size.png" alt="220 sq.ft">
+                                </span>
+                                            <span class="rmTypeList__item--text">220 sq.ft</span>
+                                        </li>
+                                        <li class="rmTypeList__item">
+                                            <span class="rmTypeList__item--icon">
+                                    <img src="https://promos.makemytrip.com/Hotels_product/Hotel_SR/Android/drawable-hdpi/view.png" alt="City View"> 
+                                </span>
+                                            <span class="rmTypeList__item--text">AC Facility</span>
+                                        </li>
+                                        <li class="rmTypeList__item">
+                                            <span class="rmTypeList__item--icon">
+                                    <img src="https://promos.makemytrip.com/Hotels_product/Hotel_SR/Android/drawable-hdpi/bed.png" alt="Double Bed">
+                                </span>
+                                            <span class="rmTypeList__item--text">Double Bed</span>
+                                        </li>
+                                    </ul>
+                                    <div id="single_tour_desc" class="w-100">
+                                        <div id="single_tour_feat">
+                                            <div class="features">
+                                                <img src="img/ai.png" class="room_aminity" loading="lazy">
+                                                <br> Air Conditioner
+                                            </div>
+                                            <div class="features">
+                                                <img src="img/hot.png" class="room_aminity" loading="lazy">
+                                                <br> Hold &amp; Cold Water
+                                            </div>
+                                            <div class="features">
+                                                <img src="img/power.png" class="room_aminity" loading="lazy">
+                                                <br> Power Backup
+                                            </div>
+                                            <div class="features">
+                                                <img src="img/TV.png" class="room_aminity" loading="lazy">
+                                                <br> TV
+                                            </div>
+                                            <div class="features">
+                                                <img src="img/wifi.png" class="room_aminity" loading="lazy">
+                                                <br> Free WiFi
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Button trigger modal -->
+                                    <span class="bookNowBtn new" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a class="primaryBtn ">More Details</a>
+                        </span>
+
+                                </td>
+                            </tr>
+
+                            <tr class="single-room-middle">
+                                <td>
+                                    <div class="inner-content">
+                                        <span class="reco-area">RECOMMENDED</span>
+                                        <h4>Room Only</h4>
+                                        <ul>
+                                            <li><img src="img/x-mark.png">Non-Refundable</li>
+                                            <li><img src="img/check-mark.png">No meals included</li>
+                                        </ul>
+                                    </div>
+                                    <div class="border-new"></div>
+                                    <div class="inner-content">
+                                        <h4>Room with Breakfast</h4>
+                                        <ul>
+                                            <li><img src="img/x-mark.png">Non-Refundable</li>
+                                            <li><img src="img/check-mark.png">Free Re-sheduling</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="single-room-right">
+                                <td>
+                                    <div class="price-content">
+                                        <p class="top-0">Per Night</p>
+                                        <h6>₹ 4,200</h6>
+                                        <h4>₹ 3,906</h4>
+                                        <p>+₹ 798 taxes & fees</p>
+                                        <select class="form-control roombookqty" id="roombookqty1" name="roombookqty[]">
+                                    <option value="">Select</option>
+                                     <option value="1" room_id="1" avg_offered_tariff="2000" quantity="1">1</option>
+                                         <option value="2" room_id="1" avg_offered_tariff="2000" quantity="2">2</option>
+                                         <option value="3" room_id="1" avg_offered_tariff="2000" quantity="3">3</option>
+                                         <option value="4" room_id="1" avg_offered_tariff="2000" quantity="4">4</option>
+                                 </select>
+                                        <p><small class="text1">May be available 2 Rooms</small></p>
+                                    </div>
+                                    <div class="border-new"></div>
+                                    <div class="price-content">
+                                        <p class="top-0">Per Night</p>
+                                        <h6>₹ 4,200</h6>
+                                        <h4>₹ 3,906</h4>
+                                        <p>+₹ 798 taxes & fees</p>
+                                        <select class="form-control roombookqty" id="roombookqty1" name="roombookqty[]">
+                                    <option value="">Select</option>
+                                     <option value="1" room_id="1" avg_offered_tariff="2000" quantity="1">1</option>
+                                         <option value="2" room_id="1" avg_offered_tariff="2000" quantity="2">2</option>
+                                         <option value="3" room_id="1" avg_offered_tariff="2000" quantity="3">3</option>
+                                         <option value="4" room_id="1" avg_offered_tariff="2000" quantity="4">4</option>
+                                 </select>
+                                        <p><small class="text1">May be available 2 Rooms</small></p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Amenity</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="single_tour_desc" class="w-100">
+                                        <div id="single_tour_feat">
+                                            <div class="features">
+                                                <img src="img/ai.png" class="room_aminity" loading="lazy">
+                                                <br> Air Conditioner
+                                            </div>
+                                            <div class="features">
+                                                <img src="img/hot.png" class="room_aminity" loading="lazy">
+                                                <br> Hold &amp; Cold Water
+                                            </div>
+                                            <div class="features">
+                                                <img src="img/power.png" class="room_aminity" loading="lazy">
+                                                <br> Power Backup
+                                            </div>
+                                            <div class="features">
+                                                <img src="img/TV.png" class="room_aminity" loading="lazy">
+                                                <br> TV
+                                            </div>
+                                            <div class="features">
+                                                <img src="img/wifi.png" class="room_aminity" loading="lazy">
+                                                <br> Free WiFi
+                                            </div>
+                                            <div class="features">
+                                                <img src="img/ai.png" class="room_aminity" loading="lazy">
+                                                <br> Air Conditioner
+                                            </div>
+                                            <div class="features">
+                                                <img src="img/hot.png" class="room_aminity" loading="lazy">
+                                                <br> Hold &amp; Cold Water
+                                            </div>
+                                            <div class="features">
+                                                <img src="img/power.png" class="room_aminity" loading="lazy">
+                                                <br> Power Backup
+                                            </div>
+                                            <div class="features">
+                                                <img src="img/TV.png" class="room_aminity" loading="lazy">
+                                                <br> TV
+                                            </div>
+                                            <div class="features">
+                                                <img src="img/wifi.png" class="room_aminity" loading="lazy">
+                                                <br> Free WiFi
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Customer Details Form -->
+        <div class="enquiry-middle">
+            <div class="container">
+                <h3>Guest Details</h3>
+                <div class="enquiry-inner">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label class="heading" for="customer_name">Guest Name<span class="requiredAsterisk">*</span></label>
+                                        <input type="text" class="form-control" id="customer_name" name="customer_name" placeholder="Enter customer name">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="mobile" class="heading">WhatsApp No<span class="requiredAsterisk">*</span></label>
+                                            <input type="number" class="form-control" id="mobile" name="mobile" placeholder="WhatsApp No">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="email" class="heading">Email</label>
+                                            <input type="text" class="form-control" id="email" name="email" placeholder="Enter email">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="heading" for="company_name">Company Name</label>
+                                    <input type="text" class="form-control" id="company_name" name="company_name" placeholder="Enter customer company">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group"><label class="heading" for="adults">Adults<span class="requiredAsterisk">*</span></label><input type="number" class="form-control" id="adults" name="adults" value="1" placeholder="Enter no adult guest"></div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group"><label class="heading" for="children">Children<span class="requiredAsterisk">*</span></label><input type="number" class="form-control" id="children" name="children" value="0" placeholder="Enter no of children"></div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group"><label class="heading" for="infant">Infant<span class="requiredAsterisk">*</span></label><input type="number" class="form-control" id="infant" name="infant" value="0" placeholder="Enter no of infant"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="heading" for="gstin">Company GSTIN</label>
+                                    <input type="text" class="form-control" id="gstin" name="gstin" placeholder="Enter GSTIN">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="heading" for="state_id">State Of Supply<span class="requiredAsterisk">*</span></label>
+                                    <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" id="state_id" name="state_id" data-select2-id="state_id" tabindex="-1" aria-hidden="true">
+                                <option value="">Select State</option>
+                                                                    <option value="1">Andhra Pradesh</option>
+                                                                    <option value="2">Arunachal Pradesh</option>
+                                                                    <option value="3">Assam</option>
+                                                                    <option value="4">Bihar</option>
+                                                                    <option value="5">Chhattisgarh</option>
+                                                                    <option value="6">Goa</option>
+                                                                    <option value="7">Gujarat</option>
+                                                                    <option value="8">Haryana</option>
+                                                                    <option value="9">Himachal Pradesh</option>
+                                                                    <option value="10">Jharkhand</option>
+                                                                    <option value="11">Karnataka</option>
+                                                                    <option value="12">Kerala</option>
+                                                                    <option value="13">Madhya Pradesh</option>
+                                                                    <option value="14">Maharashtra</option>
+                                                                    <option value="15">Manipur</option>
+                                                                    <option value="16">Meghalaya</option>
+                                                                    <option value="17">Mizoram</option>
+                                                                    <option value="18">Nagaland</option>
+                                                                    <option value="19">Odisha</option>
+                                                                    <option value="20">Punjab</option>
+                                                                    <option value="21">Rajasthan</option>
+                                                                    <option value="22">Sikkim</option>
+                                                                    <option value="23">Tamil Nadu</option>
+                                                                    <option value="24">Telangana</option>
+                                                                    <option value="25">Tripura</option>
+                                                                    <option value="26">Uttar Pradesh</option>
+                                                                    <option value="27">Uttarakhand</option>
+                                                                    <option value="28" selected="" data-select2-id="2">West Bengal</option>
+                                                                </select>
+                                    <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-state_id-container"><span class="select2-selection__rendered" id="select2-state_id-container" role="textbox" aria-readonly="true" title="West Bengal">West Bengal</span>
+                                    <span
+                                        class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span>
+                                        </span>
+                                        </span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address" class="heading">Address<span class="requiredAsterisk">*</span></label>
+                            <textarea class="form-control" name="address" id="address" rows="3" placeholder="Enter Address"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group mb-0">
+                                    <div class="custom-control custom-checkbox custom-term">
+                                        <input type="checkbox" name="terms" class="custom-control-input" id="accept_checkbox">
+                                        <label class="custom-control-label" for="accept_checkbox"> I Accept 
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#termsModal" target="_blank">
+                                         Terms &amp; Condition</a> &amp;
+                                          <a href="" data-bs-toggle="modal" data-bs-target="#cancellationModal" target="_blank">
+                                            Cancellation Policy</a>
+                                            <sup class="text-danger">
+                                                *</sup>
+                                </label>
+                                        <!-- Terms-Modal -->
+                                        <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Terms & Conditions
+                                                        </h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                                                    <div class="modal-body">
+                                                        <ul>
+                                                            <li>The primary guest must be at least 18 years of age to be able to check in at the hotel. The receipt due amount must be paid on Check-in at Hotel.
+                                                            </li>
+                                                            <li>It is mandatory for guests to present valid photo identification at the time of check-in. According to government regulations, a valid Photo ID has to be carried by every person above the age
+                                                                of 18 staying at the hotel. The identification proofs accepted are a Driving License, Voter ID Card, and Passport. Without a valid ID, the guest will not be allowed to check in.
+                                                            </li>
+                                                            <li>Only PAN card is not accepted as valid ID cards.
+                                                            </li>
+                                                            <li>The stay of 1 child up to 5 years of age is complementary without the use of extra mattresses. Breakfast charges may be applicable to the child.
+                                                            </li>
+                                                            <li>Pets are not allowed upon prior permission of the hotel.
+                                                            </li>
+                                                            <li>Should any action by a guest be deemed inappropriate by the hotel, or if any inappropriate behavior is brought to the attention of the hotel, the hotel reserves the right, after the allegations
+                                                                have been investigated, to take action against the guest.
+                                                            </li>
+                                                            <li>Bankura Tourism is not responsible for any type of criminal activities by Guests during their stay.
+                                                            </li>
+                                                            <li>Power Backup is available through Gen-Set. No power backup on AC.
+                                                            </li>
+                                                            <li>Guests shall be liable for any damage, except normal wear and tear to the Hotel asset. Guest shall keep the Hotel room in a good condition and maintain hygiene and cleanliness.
+                                                            </li>
+                                                            <li>Certain policies are booking specific and are informed to the customer while making the booking.
+                                                            </li>
+                                                            <li>All disputes and complaints are subject to Bankura Jurisdiction only.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Cancellation-Modal -->
+                                        <div class="modal fade" id="cancellationModal" tabindex="-1" aria-labelledby="cancellationModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Cancellation Policy
+                                                        </h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                                                    <div class="modal-body">
+                                                        <ul>
+                                                            <li>Canceling is as Fast and easy as booking one. We would love to host you, but our simple cancellation process makes sure you receive a quick confirmation and fast refunds in case your plans change.
+                                                            </li>
+                                                            <li>Without an proper ID card of All Adult Guests, Check-in may be restricted. No Refund in this case.
+                                                            </li>
+                                                            <li>30 days or more prior to arrival: 5% of the total booking amount will be charged.
+                                                            </li>
+                                                            <li>29-15 days prior to arrival: 50% of the total booking amount will be charged.
+                                                            </li>
+                                                            <li>14-07 days prior to arrival: No Refund in this case. Only date changes are possible, Subject to availability.
+                                                                <li>Below 7 days or NO Show: NO cancellation or Date Change possible. NO SHOW means Guest not checked-in within 04:00 pm of C/in date without any information.
+                                                                </li>
+                                                                <li>Cancellation During Stay : NO Changes can be done after check in. Full amount will be charged in this case.
+                                                                </li>
+                                                                <li>If the cancellation happens due to CoViD lockdown or related circumstances, we provide a 1 Year credit of that booking amount from the booking date.
+                                                                </li>
+                                                                <li>We do not charge cancellation fees for bookings canceled within 60 minutes of creating the same booking. Any amount paid will be refunded.
+                                                                </li>
+                                                                <li>For WBTDCL & WBFDC property bookings cancellation will be done according to their policy.
+                                                                </li>
+                                                                <li>For special discounted tariff/special package we don't provide any type of refund. Only Date change is possible deducting 5% of booking amount.
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="bookNowBtn new">
+                    <a class="primaryBtn ">Submit</a>
+                </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="img/logo-bg.jpg" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>We are from Bankura Tourism to make your trip smooth, hectic free and memorable. We want to show our district so we heartily welcome you all to visit Bankura, the hidden treasure of WB.
+                                </p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-flickr"></i></a>
+                                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 mb-30">
+                        <div class="footer-widget custom-padding">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Hotel Enquiry</a></li>
+                                <li><a href="#">Package Enquiry</a></li>
+                                <li><a href="#">Car Enquiry</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Booking Office</h3>
+                            </div>
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i> Rural Dreams Private Limited<br> CIN: U63030WB2019PTC234115<br> SIMLAPAL SCHOOL MORE P.O & P.S-SIMLAPAL BANKURA,<br> WEST BENGAL INDIA - 7221516</li>
+                                <li><i class="fa-sharp fa-solid fa-clock"></i> 10:00 hrs - 21:00 hrs. (All Working day)
+                                </li>
+                                <li><i class="fa-solid fa-phone"></i> Ph No - <a href="tel:+91 7407407474">+91 7407407474</a>
+                                </li>
+                                <li><i class="fa-solid fa-envelope-open-text"></i> Email - <a href="mailto:support@bankuratourism.com">support@bankuratourism.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="copyright-text">
+                    <p>Copyright © 2020-2023 | <a href="https://bankuratourism.com/">Bankura Tourism </a>All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="button-sticky">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-xs-6">
+                <div class="info-box">
+                    <span class="info-box-text text-center text-primary"><b>Check In: </b>22/05/2023 <b>Check Out: </b>24/05/2023</span>
+                    <span class="info-box-text text-center text-primary">Booking for <b>2 nights 3 days</b></span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-xs-6">
+                <div class="info-box">
+                    <span class="info-box-text text-center text-primary"><b>Hotel: </b>Rimil Eco Tourism</span>
+                    <span class="info-box-text text-center text-primary"><b>Location: </b>Jhilimili</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-xs-6">
+                <div class="info-box">
+                    <p>3 ROOMS</p>
+                    <h6>Total Amount Payable (in Rupees)
+                        <strong style="font-size: 15px;"> ₹ 8960</strong></h6>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-xs-6">
+                <span class="bookNowBtn new">
+                <a class="primaryBtn ">Submit Enquiry</a>
+            </span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ------------------------------------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- Hedaer-js -->
+    <script>
+        $(document).ready(function() {
+
+            var showHeaderAt = 150;
+
+            var win = $(window),
+                body = $('body');
+
+            // Show the fixed header only on larger screen devices
+
+            if (win.width() > 400) {
+
+                // When we scroll more than 150px down, we set the
+                // "fixed" class on the body element.
+
+                win.on('scroll', function(e) {
+
+                    if (win.scrollTop() > showHeaderAt) {
+                        body.addClass('fixed');
+                    } else {
+                        body.removeClass('fixed');
+                    }
+                });
+
+            }
+
+        });
+    </script>
+
+
+
+    <script>
+        var nowTemp = new Date();
+        var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+
+        var checkin = $('#dp1').datepicker({
+
+            beforeShowDay: function(date) {
+                return date.valueOf() >= now.valueOf();
+            },
+            autoclose: true
+
+        }).on('changeDate', function(ev) {
+            if (ev.date.valueOf() > checkout.datepicker("getDate").valueOf() || !checkout.datepicker("getDate").valueOf()) {
+
+                var newDate = new Date(ev.date);
+                newDate.setDate(newDate.getDate() + 1);
+                checkout.datepicker("update", newDate);
+
+            }
+            $('#dp2')[0].focus();
+        });
+
+
+        var checkout = $('#dp2').datepicker({
+            beforeShowDay: function(date) {
+                if (!checkin.datepicker("getDate").valueOf()) {
+                    return date.valueOf() >= new Date().valueOf();
+                } else {
+                    return date.valueOf() > checkin.datepicker("getDate").valueOf();
+                }
+            },
+            autoclose: true
+
+        }).on('changeDate', function(ev) {});
+    </script>
+
+</body>
+
+</html>

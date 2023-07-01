@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Package Enquiry Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+     <!-- Heading Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ 
+     <!-- Para Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+      <!-- Font Awesome -->    
+      <script src="https://kit.fontawesome.com/8006451f2f.js" crossorigin="anonymous"></script>
+ 
+  </head>
+  <body>
+
+  <!-- Header Section -->
+    <header class="header-fixed">
+
+      <div class="header-limiter">
+    
+       <a href="#" class="nav-left"><img src="img/logo-bg.jpg"></a>
+    
+        <nav class="nav-right">
+          <a href="#" class="selected">Home</a>
+          <a href="#">Hotel Enquiry</a>
+          <a href="#">Package Enquiry</a>
+          <a href="#">Car Enquiry</a>
+          <a href="#">Contact Us</a>
+        </nav>
+    
+      </div>
+    
+    </header>
+
+ <div class="enquiry-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-xl-4">
+                <div class="enquiry-left">
+                    <h3>Available Packages</h3>
+                    <div class="enquiry-inner">
+                        <label class="heading">Package Includes<span class="requiredAsterisk">*</span> <span class="requiredAsterisk" id="total_nights_text"></span></label>
+                        <div class="form-group clearfix">
+                            <div class="icheck-primary d-inline">
+                                <input class="package_include_list" type="checkbox" name="booking_hotel" id="booking_hotel" value="Hotel" checked="">
+                                <label for="booking_hotel"> Hotel</label>
+                            </div>
+                            <div class="icheck-primary d-inline">
+                                <input class="package_include_list" type="checkbox" name="booking_food" id="booking_food" value="Package" checked="">
+                                <label for="booking_food"> Package Food</label>
+                            </div>
+                            <div class="icheck-primary d-inline">
+                                <input class="package_include_list" type="checkbox" name="booking_car" id="booking_car" value="Car" checked="">
+                                <label for="booking_car"> Car</label>
+                            </div>
+                            <div class="icheck-primary d-inline">
+                                <input class="package_include_list" type="checkbox" name="guide" id="guide" value="guide">
+                                <label for="guide"> Guide</label>
+                            </div>
+                        </div>
+                        <label class="heading">Package Food</label>
+                        <div class="form-group clearfix">
+                            <div class="icheck-warning d-inline">
+                                <input type="checkbox" name="breakfast" id="breakfast" value="breakfast" checked="">
+                                <label for="breakfast"> Breakfast</label>
+                            </div>
+                            <div class="icheck-warning d-inline">
+                                <input type="checkbox" name="lunch" id="lunch" value="lunch" checked="">
+                                <label for="lunch"> Lunch</label>
+                            </div>
+                            <div class="icheck-warning d-inline">
+                                <input type="checkbox" name="snacks" id="snacks" value="snacks">
+                                <label for="snacks"> Eve Snacks</label>
+                            </div>
+                            <div class="icheck-warning d-inline">
+                                <input type="checkbox" name="dinner" id="dinner" value="dinner" checked="">
+                                <label for="dinner"> Dinner</label>
+                            </div>
+                        </div>
+                        <label class="heading">Car Required for</label>
+                        <div class="form-group clearfix">
+                            <div class="icheck-success d-inline">
+                                <input type="checkbox" name="booking_pickupdrop" id="booking_pickupdrop" value="Pickupdrop" checked="">
+                                <label for="booking_pickupdrop"> PickUp-Drop</label>
+                            </div>
+                            <div class="icheck-success d-inline">
+                                <input type="checkbox" name="booking_sightseeing" id="booking_sightseeing" value="Sightseeing" checked="">
+                                <label for="booking_sightseeing"> Sightseeing</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="location" class="heading">Location<span class="requiredAsterisk">*</span></label>
+                            <input type="text" class="form-control" id="location" name="location" placeholder="location">
+                        </div>
+                                <label class="heading">Package Food</label>
+                                <div class="form-group clearfix">
+                                    <div class="icheck-warning d-inline">
+                                        <input type="checkbox" name="breakfast" id="breakfast" value="breakfast" checked="">
+                                        <label for="breakfast"> Breakfast</label>
+                                    </div>
+                                    <div class="icheck-warning d-inline">
+                                        <input type="checkbox" name="lunch" id="lunch" value="lunch" checked="">
+                                        <label for="lunch"> Lunch</label>
+                                    </div>
+                                    <div class="icheck-warning d-inline">
+                                        <input type="checkbox" name="snacks" id="snacks" value="snacks">
+                                        <label for="snacks"> Eve Snacks</label>
+                                    </div>
+                                    <div class="icheck-warning d-inline">
+                                        <input type="checkbox" name="dinner" id="dinner" value="dinner" checked="">
+                                        <label for="dinner"> Dinner</label>
+                                    </div>
+                                </div>
+                                <label class="heading">Car Required for</label>
+                                <div class="form-group clearfix">
+                                    <div class="icheck-success d-inline">
+                                        <input type="checkbox" name="booking_pickupdrop" id="booking_pickupdrop" value="Pickupdrop" checked="">
+                                        <label for="booking_pickupdrop"> PickUp-Drop</label>
+                                    </div>
+                                    <div class="icheck-success d-inline">
+                                        <input type="checkbox" name="booking_sightseeing" id="booking_sightseeing" value="Sightseeing" checked="">
+                                        <label for="booking_sightseeing"> Sightseeing</label>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-xl-5">
+                <div class="enquiry-middle">
+                    <h3>Guest Information</h3>
+                    <div class="enquiry-inner">
+                        <div class="card-body">
+                            <div class="row">
+                                    <div class="bootstrap-timepicker">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label class="heading">Check In<span class="requiredAsterisk">*</span></label>
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="date" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="heading">Check out<span class="requiredAsterisk">*</span></label>
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="date" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                        </div>
+                                </div>
+                                    <div class="form-group">
+                                        <label for="guest_name" class="heading">Guest name/Group leader name<span class="requiredAsterisk">*</span></label>
+                                        <input type="text" class="form-control" id="guest_name" name="guest_name" placeholder="Guest name">
+                                    </div>
+                                <div class="col-md-4">
+                                    <div class="form-group"><label for="adults">Adults<span class="requiredAsterisk">*</span></label><input type="number" class="form-control" id="adults" name="adults" value="1" placeholder="Enter no adult guest"></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group"><label for="children">Children<span class="requiredAsterisk">*</span></label><input type="number" class="form-control" id="children" name="children" value="0" placeholder="Enter no of children"></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group"><label for="infant">Infant<span class="requiredAsterisk">*</span></label><input type="number" class="form-control" id="infant" name="infant" value="0" placeholder="Enter no of infant"></div>
+                                </div>
+                            </div>
+                                    <div class="form-group">
+                                        <label for="mobile" class="heading">WhatsApp No<span class="requiredAsterisk">*</span></label>
+                                        <input type="number" class="form-control" id="mobile" name="mobile" placeholder="WhatsApp No">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="heading">Email</label>
+                                        <input type="text" class="form-control" id="email" name="email" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address" class="heading">Billing Address<span class="requiredAsterisk">*</span></label>
+                                        <textarea class="form-control" name="address" id="address" rows="3" placeholder="Enter Address"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="info" class="heading">Additional information/requirements (Optional)</label>
+                                        <textarea class="form-control" name="info" id="info" rows="2"></textarea>
+                                    </div>
+                                <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group mb-0">
+                                        <div class="custom-control custom-checkbox custom-term">
+                                            <input type="checkbox" name="terms" class="custom-control-input" id="accept_checkbox">
+                                            <label class="custom-control-label" for="accept_checkbox"> I Accept 
+                                                <a href="" data-bs-toggle="modal" data-bs-target="#termsModal" target="_blank">
+                                                     Terms &amp; Condition</a> &amp;
+                                                      <a href="" data-bs-toggle="modal" data-bs-target="#cancellationModal" target="_blank">
+                                                        Cancellation Policy</a>
+                                                        <sup class="text-danger">
+                                                            *</sup>
+                                            </label>
+                                                <!-- Terms-Modal -->
+                                                <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Terms & Conditions
+                                                        </h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                                                        <div class="modal-body">
+                                                            <ul>
+                                                                <li>The primary guest must be at least 18 years of age to be able to check in at the hotel. The receipt due amount must be paid on Check-in at Hotel.
+                                                                </li>
+                                                                <li>It is mandatory for guests to present valid photo identification at the time of check-in. According to government regulations, a valid Photo ID has to be carried by every person above the age of 18 staying at the hotel. The identification proofs accepted are a Driving License, Voter ID Card, and Passport. Without a valid ID, the guest will not be allowed to check in.
+                                                                </li>
+                                                                <li>Only PAN card is not accepted as valid ID cards.
+                                                                </li>
+                                                                <li>The stay of 1 child up to 5 years of age is complementary without the use of extra mattresses. Breakfast charges may be applicable to the child.
+                                                                </li>
+                                                                <li>Pets are not allowed upon prior permission of the hotel.
+                                                                </li>
+                                                                <li>Should any action by a guest be deemed inappropriate by the hotel, or if any inappropriate behavior is brought to the attention of the hotel, the hotel reserves the right, after the allegations have been investigated, to take action against the guest.
+                                                                </li>
+                                                                <li>Bankura Tourism is not responsible for any type of criminal activities by Guests during their stay.
+                                                                </li>
+                                                                <li>Power Backup is available through Gen-Set. No power backup on AC.
+                                                                </li>
+                                                                <li>Guests shall be liable for any damage, except normal wear and tear to the Hotel asset. Guest shall keep the Hotel room in a good condition and maintain hygiene and cleanliness.
+                                                                </li>
+                                                                <li>Certain policies are booking specific and are informed to the customer while making the booking.
+                                                                </li>
+                                                                <li>All disputes and complaints are subject to Bankura Jurisdiction only.
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Cancellation-Modal -->
+                                                <div class="modal fade" id="cancellationModal" tabindex="-1" aria-labelledby="cancellationModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Cancellation Policy
+                                                        </h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                                                        <div class="modal-body">
+                                                            <ul>
+                                                                <li>Canceling is as Fast and easy as booking one. We would love to host you, but our simple cancellation process makes sure you receive a quick confirmation and fast refunds in case your plans change.
+                                                                </li>
+                                                                <li>Without an proper ID card of All Adult Guests, Check-in may be restricted. No Refund in this case.
+                                                                </li>
+                                                                <li>30 days or more prior to arrival: 5% of the total booking amount will be charged.
+                                                                </li>
+                                                                <li>29-15 days prior to arrival: 50% of the total booking amount will be charged.
+                                                                </li>
+                                                                <li>14-07 days prior to arrival: No Refund in this case. Only date changes are possible, Subject to availability.
+                                                                <li>Below 7 days or NO Show:  NO cancellation or Date Change possible. NO SHOW means Guest not checked-in within 04:00 pm of C/in date without any information.
+                                                                </li>
+                                                                <li>Cancellation During Stay :  NO Changes can be done after check in. Full amount will be charged in this case.
+                                                                </li>
+                                                                <li>If the cancellation happens due to CoViD lockdown or related circumstances, we provide a 1 Year credit of that booking amount from the booking date.
+                                                                </li>
+                                                                <li>We do not charge cancellation fees for bookings canceled within 60 minutes of creating the same booking. Any amount paid will be refunded.
+                                                                </li>
+                                                                <li>For WBTDCL & WBFDC property bookings cancellation will be done according to their policy.
+                                                                </li>
+                                                                <li>For special discounted tariff/special package we don't provide any type of refund. Only Date change is possible deducting 5% of booking amount.
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+            </div>            
+            <div class="col-lg-3 col-md-12 col-xl-3">
+                    <div class="enquiry-right">
+                        <h3>Itinerary</h3>
+                        <div class="enquiry-inner1">
+                                    <div class="itinerary">
+                                    <h4>Mukutmanipur Bishnupur Tour Package</h4>
+                                    <img src="img/mukutmanipur.jpg"/>
+                                       <!-- Button trigger modal -->
+                                    <span class="bookNowBtn new" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <a class="primaryBtn ">View Full Itinerary</a>
+                                    </span> 
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Mukutmanipur Bishnupur Tour Package
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-xl-6">
+                                                   <img src="img/bishnupur-rashmancha.jpg">
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-xl-6">
+                                                    <img src="img/mukutmanipur.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>Day 1 : </h5>
+                                                <h6>Arrive Bankura (BQA)/Bishnupur (VSU) | Mukutmanipur Sightseeing</h6>
+                                                <ul>
+                                                    <li>Arrive at Bankura Station by available trains or buses. Our car will pick you up from bankura station or bus-stand. Then take a ride of 55 kms and reach The Second largest earthen dam of India i.e. Mukutmanipur.
+                                                    </li>
+                                                    <li>Check -in at hotel and get refreshed and enjoy the beauty of Mukutmanipur by staying overnight.
+                                                    </li>
+                                                    <li>After lunch visit Kangsabati dam by car or battery operated eco-friendly vehicles which available. A boat ride at the time of sunset will give you a mesmerizing view with some beautiful clicks on your smartphone. Besides you can explore Pareshnath Shiv-Mandir, Musafirana View point and Deer Park.
+                                                    </li>
+                                                </ul>
+                                                <h5>Day 2 : </h5>
+                                                <h6>Bishnupur Temple town | Panchmura Terracotta village Sightseeing</h6>
+                                                <ul>
+                                                    <li>Have breakfast and proceed for visit of Bishnupur temples and handicrafts. Our car will pickup you from hotel and drive 75 KM to reach Bishnupur through forest roads.
+                                                    </li>
+                                                    <li>Visit Maa Mrinmoyee temple, Jorebangla temple, Shyamrai temple, Gar-darja, Chhinnamsta temple, Jore-shreni temples, Radheshyam temple, Nandalal temple with Dalmadal Canon.
+                                                    </li>
+                                                    <li>Have lunch and visit to Lalbandh followed by Acharya Jogesh Chandra Museum. You can buy world famous ‘Baluchari Silk’ Saree from Bishnupur to get a cheaper and authentic one.
+                                                    </li>
+                                                    <li>On return journey visit Panchmura terracotta village. Buy artifacts directly from artisans. You can visit ‘Tridhara temple’ at Panchmura as an added attraction.
+                                                    </li>
+                                                    <li>Return to Mukutmanipur hotel and stay overnight.
+                                                    </li>
+                                                </ul>
+                                                <h5>Day 3 : </h5>
+                                                <h6>Checkout from hotel and Drop to Jhargram (JGM) / Bankura (BQA) station</h6>
+                                                <ul>
+                                                    <li>This morning after breakfast checkout from hotel and proceed for visit of Jhilimili-Sutan Forest. Jhilimili and Sutan Forest also known as “Baro Mile-er Jungle” is 30 Km away from Mukutmanipur.
+                                                    </li>
+                                                    <li>There are viewpoints scattered throughout the forest from where you will get breathtaking landscapes. Enjoy the raw forest and thrill of hair-pin roads over Sutan lake.
+                                                    </li>
+                                                    <li>Then our car drives to Jhargram via Belpahari and Drop to Jhargram station. In between journey you can visit ‘Jhargram Rajbari’ and a mini zoo at Jhargram. Catch train at Jhargram Station towards Howrah/Kolkata by Ispat Express (3:23 pm) / Ghatsila-Howrah Exp. (3:23 pm) with a good experience.
+                                                    </li>                                                   
+                                                </ul>
+                                                <p>Or,</p>
+                                                <ul>
+                                                    <li>This morning after breakfast checkout from hotel and proceed for Susunia hill sightseeing via Bikna village. Visit Susunia and have lunch.
+                                                    </li>
+                                                    <li>Then our car drives to Bankura Railway Station. Catch train at Bankura Station towards Howrah/Kolkata by Aranyak Express (3:00 pm) / Ruposi Bangla Exp. (5:30 pm) with a good experience.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="itinerary">
+                                        <h4>Bishnupur & Jayrambati</h4>
+                                        <img src="img/bishnupur-rashmancha.jpg"/>
+                                           <!-- Button trigger modal -->
+                                        <span class="bookNowBtn new" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                            <a class="primaryBtn ">View Full Itinerary</a>
+                                        </span> 
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel1">Bishnupur & Jayrambati
+                                                </h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-xl-6">
+                                                       <img src="img/bishnupur-rashmancha.jpg">
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-xl-6">
+                                                        <img src="img/joyrambati.jpg">
+                                                    </div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h5>Day 1 : </h5>
+                                                    <h6>Arrive Bankura (BQA)/Bishnupur (VSU) | Mukutmanipur Sightseeing
+                                                    </h6>
+                                                    <ul>
+                                                        <li>Arrive at Bishnupur Station by available trains or buses. Our car will pick you up from Bishnupur station or bus-stand to hotel.
+                                                        </li>
+                                                        <li>Check-in at hotel and get refreshed and have lunch.
+                                                        </li>
+                                                        <li>After lunch start sightseeing of Bishnupur Temples from Rasmancha with guide on battery operated toto
+                                                        </li>
+                                                        <li>Visit Maa Mrinmoyee temple, Jorebangla temple, Shyamrai temple, Gar-darja, Chhinnamsta temple, Jore-shreni temples, Radheshyam temple etc. with Dalmadal Canon.
+                                                        </li>
+                                                        <li>In the afternoon session visit Lalbandh and Archeological Museum of Bishnupur.
+                                                        </li>
+                                                        <li>In the evening you can visit Baluchari shops/outlets/weaving centre.
+                                                        </li>
+                                                    </ul>
+                                                    <h5>Day 2 : </h5>
+                                                    <h6>Joyrambati & Joypur forest Sightseeing or Mukutmanipur & Panchmura visit
+                                                    </h6>
+                                                    <ul>
+                                                        <li>Have morning breakfast. Start journey towards Joyrambati-the birth place of Holy mother Sri Sri Sarada Devi.
+                                                        </li>
+                                                        <li>Enjoy the beauty of Joypur forest on the way to Joyrambati.
+                                                        </li>
+                                                        <li>Visit Sri Sri Matri Mandir and you can have the ‘Bhog’ there or you can have your lunch in any other places.
+                                                        </li>
+                                                        <li>Then our car will take you to Kamarpukur to visit the religious place.
+                                                        </li>
+                                                        <li>Back to Bishnupur via Banalata Resort
+                                                        </li>
+                                                        <li>If you visit on Saturday you can spend your evening time at Jore-shreni temples area to enjoy Poramatir Haat.
+                                                        </li>
+                                                        <li>Back to hotel and overnight stay
+                                                        </li>
+                                                        <p>Or,</p>
+                                                        <li>Back to hotel. Have dinner and stay at hotel overnight.
+                                                        </li>
+                                                        <li>This morning after breakfast our car will pickup you from hotel and drives towards Mukutmanipur Dam.
+                                                        </li>
+                                                        <li>Visit Kangsabati dam by car or battery operated eco-friendly vehicles which available. A boat ride at the time of sunset will give you a mesmerizing view with some beautiful clicks on your smartphone. Besides you can explore Pareshnath Shiv-Mandir, Musafirana View point and Deer Park.
+                                                        </li>
+                                                        <li>On return journey visit Panchmura village, the only terracotta village famous of Bankura horse.
+                                                        </li>
+
+                                                    </ul>
+                                                    <h5>Day 3 : </h5>
+                                                    <h6>Checkout from hotel and Drop to Bishnupur (VSU) station
+                                                    </h6>
+                                                    <ul>
+                                                        <li>This morning after breakfast checkout from hotel.
+                                                        </li>
+                                                        <li>Then our car/toto drives to Bishnupur Railway Station. Catch train at Bishnupur Station towards Howrah/Kolkata by Purulia Express (7:30 am) with a good experience.
+                                                        </li>
+                                                    </ul>
+                                                    <p>Or,</p>
+                                                    <ul>
+                                                        <li>Back to hotel. Have dinner and stay at hotel overnight.
+                                                        </li>                                                   
+                                                        <li>This morning after breakfast our car will pickup you from hotel and drives towards Mukutmanipur Dam.
+                                                        </li>                                                   
+                                                        <li>Visit Kangsabati dam by car or battery operated eco-friendly vehicles which available. A boat ride at the time of sunset will give you a mesmerizing view with some beautiful clicks on your smartphone. Besides you can explore Pareshnath Shiv-Mandir, Musafirana View point and Deer Park.
+                                                        </li>
+                                                        <li>On return journey visit Panchmura village, the only terracotta village famous of Bankura horse.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="itinerary">
+                                        <h4>Bardi Pahar & Jhilimili</h4>
+                                        <img src="img/jhilimili-forest..jpg"/>
+                                           <!-- Button trigger modal -->
+                                        <span class="bookNowBtn new" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                            <a class="primaryBtn ">View Full Itinerary</a>
+                                        </span> 
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel2">Bardi Pahar & Jhilimili
+                                                </h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-xl-6">
+                                                       <img src="img/bardipahar.jpg">
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-xl-6">
+                                                        <img src="img/jhilimili-forest..jpg">
+                                                    </div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h5>Day 1 : </h5>
+                                                    <h6>Arrive Bankura (BQA)/Bishnupur (VSU) | Mukutmanipur Sightseeing
+                                                    </h6>
+                                                    <ul>
+                                                        <li>Arrive at Bankura Station by available trains or buses. Our car will pick you up from bankura station or Bishnupur station or bus-stand.
+                                                        </li>
+                                                        <li>Check-in at hotel at Bardi pahar and get refreshed and enjoy the beauty of Kangsabati river by staying overnight at Bardi pahar.
+                                                        </li>
+                                                        <li>After lunch take a ride of 30 kms and reach The Second largest earthen dam of India i.e. Mukutmanipur by car. At the time of sunset will give you a mesmerizing view with some beautiful clicks on your smartphone at Mukutmanipur. Enjoy boating over there
+                                                        </li>
+                                                    </ul>
+                                                    <h5>Day 2 : </h5>
+                                                    <h6>Jhilimili-Sutan ‘Baro-mile Forest’ | Talberia lake Sightseeing
+                                                    </h6>
+                                                    <ul>
+                                                        <li>Checkout from Bardi pahar resort. Then proceed for visit of Jhilimili-Sutan Forest. Jhilimili and Sutan Forest also known as “Baro Mile-er Jungle” is 50 Km away from Bardi pahar.
+                                                        </li>
+                                                        <li>There are viewpoints scattered throughout the forest from where you will get breathtaking landscapes. You will be happy to have a talk with king sized trees like Sal, Mahua, Shimul etc.
+                                                        </li>
+                                                        <li>The forest is rich with different species of fauna and distinctive flowers and seasonal birds. To be the cherry on the cake, a vibrant peacock may come into your sight for a golden glance.
+                                                        </li>
+                                                        <li>Enjoy the raw forest and thrill of hair-pin roads over Sutan lake.
+                                                        </li>
+                                                        <li>Visit to Talberia dam, an isolated waterbody in between forests.
+                                                        </li>
+                                                        <li>Therefore proceed for Rimil Eco Tourism and stay overnight there.
+                                                        </li>
+                                                    </ul>
+                                                    <h5>Day 3 : </h5>
+                                                    <h6>Checkout from hotel and Drop to Jhargram (JGM) / Bankura (BQA) station
+                                                    </h6>
+                                                    <ul>
+                                                        <li>This morning after breakfast checkout from hotel.
+                                                        </li>
+                                                        <li>Our car drives to Jhargram via Belpahari and Drop to Jhargram station. In between journey you can visit ‘Jhargram Rajbari’ and a mini zoo at Jhargram. Catch train at Jhargram Station towards Howrah/Kolkata by Ispat Express (3:23 pm) / Ghatsila-Howrah Exp. (3:23 pm) with a good experience.
+                                                        </li>
+                                                    </ul>
+                                                    <p>Or,</p>
+                                                    <ul>
+                                                        <li>Our car drives to Bankura Railway Station. Catch train at Bankura Station towards Howrah/Kolkata by Aranyak Express (3:00 pm) / Ruposi Bangla Exp. (5:30 pm) with a good experience
+                                                        </li>                                                   
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="bookNowBtn new">
+            <a class="primaryBtn ">Submit</a>
+        </span>
+
+    </div>
+ </div>   
+
+
+<!-- Footer Section -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="img/logo-bg.jpg" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>We are from Bankura Tourism to make your trip smooth, hectic free and memorable. We want to show our district so we heartily welcome you all to visit Bankura, the hidden treasure of WB.
+                            </p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-flickr"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 mb-30">
+                  <div class="footer-widget custom-padding">
+                      <div class="footer-widget-heading">
+                          <h3>Useful Links</h3>
+                      </div>
+                      <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Hotel Enquiry</a></li>
+                          <li><a href="#">Package Enquiry</a></li>
+                          <li><a href="#">Car Enquiry</a></li>
+                          <li><a href="#">Contact</a></li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Booking Office</h3>
+                        </div>
+                        <ul>
+                          <li><i class="fa-solid fa-location-dot"></i> Rural Dreams Private Limited<br>
+                              CIN: U63030WB2019PTC234115<br>
+                              SIMLAPAL SCHOOL MORE P.O & P.S-SIMLAPAL BANKURA,<br>
+                              WEST BENGAL INDIA - 7221516</li>
+                              <li><i class="fa-sharp fa-solid fa-clock"></i>  10:00 hrs - 21:00 hrs. (All Working day)                            
+                              </li>
+                                  <li><i class="fa-solid fa-phone"></i>  Ph No - <a href="tel:+91 7407407474">+91 7407407474</a>
+                                  </li>
+                                      <li><i class="fa-solid fa-envelope-open-text"></i>  Email - <a href="mailto:support@bankuratourism.com">support@bankuratourism.com</a>
+                                      </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+                    <div class="copyright-text">
+                        <p>Copyright © 2020-2023 | <a href="https://bankuratourism.com/">Bankura Tourism </a>All rights reserved.</p>
+                    </div>
+                </div>
+        </div>
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ------------------------------------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+
+    <!-- Hedaer-js -->
+    <script>
+    
+      $(document).ready(function(){
+    
+        var showHeaderAt = 150;
+    
+        var win = $(window),
+            body = $('body');
+    
+        // Show the fixed header only on larger screen devices
+    
+        if(win.width() > 400){
+    
+          // When we scroll more than 150px down, we set the
+          // "fixed" class on the body element.
+    
+          win.on('scroll', function(e){
+    
+            if(win.scrollTop() > showHeaderAt) {
+              body.addClass('fixed');
+            }
+            else {
+              body.removeClass('fixed');
+            }
+          });
+    
+        }
+    
+      });
+    
+    </script>
+
+    
+
+  </body>
+</html>
